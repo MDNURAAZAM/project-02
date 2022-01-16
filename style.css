@@ -14,23 +14,23 @@ body {
 /* common styles */
 .link-item {
   text-decoration: none;
-  background: #070707;
-  color: orange;
+  background: orange;
+  color: #070707;
   padding: 10px 29px;
   border-radius: 30px;
   font-weight: 600;
-  border: 1px solid black;
+  border: 1px solid orange;
   display: inline-block;
   margin-top: 20px;
   transition: 1s;
 }
 .link-item:hover {
-  background: orange;
-  color: #070707;
-  border: 1px solid orange;
+  background: #070707;
+  color: orange;
+  border: 1px solid #070707;
 }
 .link-item:hover .arrow {
-  color: black;
+  color: orange;
 }
 .fas {
   color: orange;
@@ -41,6 +41,7 @@ body {
 .arrow {
   margin-left: 10px;
   transition: 1s;
+  color: #070707;
 }
 .orange {
   color: orange;
@@ -59,6 +60,11 @@ body {
   width: 80%;
   margin: 20px auto;
   display: flex;
+  transition: 1s;
+}
+.banner-section:hover .banner-right img {
+  transform: scale(1.2) rotate(360deg);
+  transition: 2s;
 }
 .banner-section .banner-left {
   margin-top: 50px;
@@ -140,6 +146,7 @@ body {
 .collection-section .see-more a {
   text-decoration: none;
   color: orange;
+  font-size: 20px;
 }
 /* collection section completed */
 
@@ -201,14 +208,164 @@ body {
 
 /* responsive  */
 @media only screen and (max-width: 688px) {
-  body {
-    background-color: turquoise;
-  }
   .header-section {
     width: 100%;
     margin: 50px auto;
     font-size: 14px;
     text-align: center;
+  }
+
+  .banner-section {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    transition: 1s;
+    flex-wrap: wrap;
+  }
+  .banner-section:hover .banner-right img {
+    transform: scale(1.2) rotate(360deg);
+    transition: 2s;
+  }
+  .banner-section .banner-left {
+    margin-top: 50px;
+  }
+  .banner-section .banner-left h1 {
+    font-size: 50px;
+    margin: 10px 0;
+  }
+  .banner-section .banner-left p {
+    font-size: 20px;
+    margin: 10px 0;
+    width: 75%;
+  }
+
+  .banner-section img {
+    margin-top: 20px;
+    width: 100%;
+    margin-top: 88px;
+  }
+  /* collection section */
+  .collection-section {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .collection-section .title {
+    margin: 60px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .collection-section .collections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 0 auto;
+  }
+  .collection-section .collections .collection-item {
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 40px 0 rgb(0 0 0 / 20%), 0 6px 40px 0 rgb(0 0 0 / 19%);
+  }
+  .collection-section .collections .collection-item img {
+    width: 100%;
+  }
+
+  .collection-section .collections .collection-item .item-info {
+    margin-top: 15px;
+  }
+  .collection-section .collection-item .item-info .item-name {
+    font-weight: 600;
+    font-size: 27px;
+  }
+  .collection-section .collection-item .item-info .item-price {
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .collection-section .collection-item .item-info .item-details {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000bf;
+  }
+  .collection-section .item-details .item-ratings {
+    margin-bottom: 12px;
+  }
+
+  .collection-section .see-more {
+    text-align: right;
+    width: 94%;
+    margin-top: 30px;
+    font-weight: 700;
+  }
+
+  .collection-section .see-more a {
+    text-decoration: none;
+    color: orange;
+    font-size: 20px;
+  }
+  /* bonus section  */
+  .bonus-section h1 {
+    font-size: 30px;
+    text-align: center;
+    /* margin-top: -17px; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding-top: 30px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+
+  .projects {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 104px;
+    margin-bottom: 65px;
+  }
+  .projects div {
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 80px;
+    padding-top: 10px;
+  }
+
+  .projects img {
+    width: 100%;
+
+    object-fit: fill;
+  }
+
+  /* footer section  */
+  .footer-section {
+    background-color: rgb(2 2 38);
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+    padding: 50px 0;
+    width: 100%;
+  }
+  .footer-section .footer-content h1 {
+    font-size: 26px;
+  }
+
+  .footer-section .footer-content p {
+    font-size: 13px;
+  }
+
+  .footer-section .social-links {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  .footer-section .social-links a {
+    color: white;
+    margin: 0 10px;
+    transition: 0.5s;
+  }
+  .footer-section .social-links a:hover {
+    color: orange;
   }
 }
 
