@@ -226,7 +226,7 @@ body {
     flex-wrap: wrap;
   }
   .banner-section:hover .banner-right img {
-    transform: scale(1.2) rotate(360deg);
+    transform: scale(1) rotate(360deg);
     transition: 2s;
   }
   .banner-section .banner-left {
@@ -391,7 +391,7 @@ body {
     flex-wrap: wrap;
   }
   .banner-section:hover .banner-right img {
-    transform: scale(1.2) rotate(360deg);
+    transform: scale(1) rotate(360deg);
     transition: 2s;
   }
   .banner-section .banner-left {
